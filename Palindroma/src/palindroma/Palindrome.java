@@ -44,7 +44,7 @@ public class Palindrome {
     /**
      * Comprueba si una cadena es o palindrome
      */
-    public int palindrome() { 
+    public boolean verificar() { 
 	int k=0;
 
 	
@@ -52,10 +52,10 @@ public class Palindrome {
             aux =aux+cadena.charAt(i);
         }
         if (aux.equals(cadena)){
-            return 1;
+            return true;
         }
         else {
-            return 0;
+            return false;
         }
 	
     }
