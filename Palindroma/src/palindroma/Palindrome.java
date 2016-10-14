@@ -61,6 +61,6 @@ public class Palindrome {
     }
     @Override
     public String toString (){
-        return "La palabra introducida es :"+cadena+" La inversa es :"+aux;
+        return "La palabra introducida es :"+cadena+"   La inversa es :"+aux;
     }
 }
