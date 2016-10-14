@@ -27,8 +27,8 @@ public class PalindromePrincipal {
         //funcion verificar_Palindroma 
         //- return 1 (correcto) return 0 (incorrecto)s
         
-       System.out.println("Dame tus numeros:");
-       palabra.setCadena(lector.next());
+       System.out.println("Pon la palabra:");
+       palabra.setCadena(lector.nextLine());
     }
     
 }
