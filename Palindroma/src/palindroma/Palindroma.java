@@ -6,8 +6,9 @@
 package palindroma;
 
 /**
- *
- * @author guillem y jeickson
+ *Nos permite identicar una cadena palindroma
+ * @author guillem
+ * @author Jeickson
  */
 public class Palindroma {
 
