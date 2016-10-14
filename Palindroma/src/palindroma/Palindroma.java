@@ -18,7 +18,7 @@ public class Palindroma {
     public static void main(String[] args) {
         // TODO code application logic here
         //Clase ClasePalindroma - funcion verificar_Palindroma 
-        //- return 1 (correcto) return 0 (incorrecto)
+        //- return 1 (correcto) return 0 (incorrecto)s
     }
     
 }
