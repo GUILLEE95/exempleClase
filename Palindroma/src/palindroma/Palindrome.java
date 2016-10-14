@@ -9,6 +9,6 @@ package palindroma;
  *
  * @author alumne
  */
-public class Class_Palindroma {
+public class Palindrome {
     
 }

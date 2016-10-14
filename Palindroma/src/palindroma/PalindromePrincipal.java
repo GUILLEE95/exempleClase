@@ -10,7 +10,7 @@ package palindroma;
  * @author guillem
  * @author Jeickson
  */
-public class Palindroma {
+public class PalindromePrincipal {
 
     /**
      * @param args the command line arguments
