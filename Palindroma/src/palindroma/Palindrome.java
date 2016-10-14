@@ -20,7 +20,7 @@ public class Palindrome {
 
     public Palindrome(String cadena, String aux) {
         this.cadena = cadena;
-        this.aux = aux;
+        this.aux = "";
     }
 
     
@@ -45,11 +45,9 @@ public class Palindrome {
      * Comprueba si una cadena es o palindrome
      */
     public boolean verificar() { 
-	int k=0;
-
 	
         for (int i=this.cadena.length()-1;i>=0;i--){
-            aux =aux+cadena.charAt(i);
+            aux+=cadena.charAt(i);
         }
         if (aux.equals(cadena)){
             return true;

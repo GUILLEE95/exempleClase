@@ -29,14 +29,15 @@ public class PalindromePrincipal {
         
        System.out.println("Pon la palabra:");
        palabra.setCadena(lector.nextLine());
-       if (palindrome()==1)
+       if (palabra.verificar())
        {
-           System.out.printf("La palabra es palindroma");
+           System.out.println("La palabra es palindroma");
        }
        else
        {
-           System.out.printf("La palabra no es palindroma");
+           System.out.println("La palabra no es palindroma");
        }
+       System.out.println(palabra.toString());
     }
     
 }
