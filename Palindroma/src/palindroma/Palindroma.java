@@ -7,7 +7,7 @@ package palindroma;
 
 /**
  *
- * @author alumne
+ * @author guillem y jeickson
  */
 public class Palindroma {
 
