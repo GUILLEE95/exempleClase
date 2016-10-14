@@ -5,6 +5,8 @@
  */
 package palindroma;
 
+import java.util.Scanner;
+
 /**
  *Nos permite identicar una cadena palindroma
  * @author guillem
@@ -15,10 +17,26 @@ public class PalindromePrincipal {
     /**
      * @param args the command line arguments
      */
+    
+    static Scanner lector = new Scanner (System.in);
+    static Palindrome palabra=new Palindrome();
+    
     public static void main(String[] args) {
         // TODO code application logic here
-        //Clase ClasePalindroma - funcion verificar_Palindroma 
+        //Clase Palindrome.java
+        //funcion verificar_Palindroma 
         //- return 1 (correcto) return 0 (incorrecto)s
+        
+       System.out.println("Pon la palabra:");
+       palabra.setCadena(lector.nextLine());
+       if (palindrome()==1)
+       {
+           System.out.printf("La palabra es palindroma");
+       }
+       else
+       {
+           System.out.printf("La palabra no es palindroma");
+       }
     }
     
 }
