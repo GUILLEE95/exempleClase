@@ -20,11 +20,9 @@ public class Palindrome {
 
     public Palindrome(String cadena, String aux) {
         this.cadena = cadena;
-        this.aux = "";
+        this.aux = aux;
     }
 
-    
-    
     //Getters and Setters
 
     public String getCadena() {
@@ -46,6 +44,7 @@ public class Palindrome {
      */
     public boolean verificar() { 
 	
+        aux="";
         for (int i=this.cadena.length()-1;i>=0;i--){
             aux+=cadena.charAt(i);
         }
@@ -57,7 +56,8 @@ public class Palindrome {
         }
 	
     }
-    @Override
+    
+@Override
     public String toString (){
         return "La palabra introducida es :"+cadena+"   La inversa es :"+aux;
     }

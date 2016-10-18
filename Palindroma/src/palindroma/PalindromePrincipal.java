@@ -26,7 +26,7 @@ public class PalindromePrincipal {
         //Clase Palindrome.java
         //funcion verificar_Palindroma 
         //- return 1 (correcto) return 0 (incorrecto)s
-        
+      
        System.out.println("Pon la palabra:");
        palabra.setCadena(lector.nextLine());
        if (palabra.verificar())
