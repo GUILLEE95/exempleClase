@@ -24,7 +24,7 @@ public class PalindromeTest {
     @Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {     
-                 {"lol",true}, {"hola",false}, {"aja",true} 
+                 {"lol",true}, {"hola",false}, {"aja",true} //Le pasamos 3 palabras con el resultado esperado
            });
     }
     private String cadena;
@@ -36,9 +36,9 @@ public class PalindromeTest {
     }
      @Test
     public void verificarTest(){
-        Palindrome p = new Palindrome(this.cadena);
-        boolean res =p.verificar() ;
-        assertEquals(res,this.r);
+        Palindrome p = new Palindrome(this.cadena); //Clase palindroma de nombre p.
+        boolean res =p.verificar() ; //Devuelve true o false al usar verificar
+        assertEquals(res,this.r); //Compalamos el resultado con el resultado esperado.
         
     }
     
