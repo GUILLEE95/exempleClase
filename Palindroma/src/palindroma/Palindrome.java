@@ -10,33 +10,30 @@ package palindroma;
  * @author alumne
  */
 public class Palindrome {
+    
     //Declare
     private String cadena;
     private String aux;
+   
     //Constructors
-
     public Palindrome() {
     }
-
     public Palindrome(String cadena, String aux) {
         this.cadena = cadena;
         this.aux = aux;
     }
 
     //Getters and Setters
-
     public String getCadena() {
         return cadena;
     }
-
     public void setCadena(String Cadena) {
         this.cadena = Cadena;
     }
-
     public String getAux() {
         return aux;
     }
-    
+   
     //Functions
     
     /**
@@ -45,10 +42,11 @@ public class Palindrome {
     public boolean verificar() { 
 	
         aux="";
-        for (int i=this.cadena.length()-1;i>=0;i--){
-            aux+=cadena.charAt(i);
-        }
-        if (aux.equals(cadena)){
+        for (int i=this.cadena.length()-1;i>=0;i--){ // Bucle que recorre la cadena de atrás para alante
+            aux+=cadena.charAt(i);                  //copiamos los caracteres de la cadena principal en aux segun el bucle 
+        }                                         //por lo tanto se copiará de atras para alante por lo tanto al revés
+        
+        if (aux.equals(cadena)){// comparamos las dos cadenas 
             return true;
         }
         else {
@@ -56,8 +54,8 @@ public class Palindrome {
         }
 	
     }
-    
-@Override
+     
+        @Override
     public String toString (){
         return "La palabra introducida es :"+cadena+"   La inversa es :"+aux;
     }
