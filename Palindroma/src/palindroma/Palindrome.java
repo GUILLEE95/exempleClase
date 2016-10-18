@@ -6,8 +6,8 @@
 package palindroma;
 
 /**
- *
- * @author alumne
+ * @author Guillem
+ * @author Jeickson
  */
 public class Palindrome {
     
@@ -41,7 +41,7 @@ public class Palindrome {
      */
     public boolean verificar() { 
 	
-        aux="";
+        aux=""; //Le damos a aux un valor de cero.
         for (int i=this.cadena.length()-1;i>=0;i--){ // Bucle que recorre la cadena de atrás para alante
             aux+=cadena.charAt(i);                  //copiamos los caracteres de la cadena principal en aux segun el bucle 
         }                                         //por lo tanto se copiará de atras para alante por lo tanto al revés
@@ -55,8 +55,8 @@ public class Palindrome {
 	
     }
      
-        @Override
+        @Override 
     public String toString (){
-        return "La palabra introducida es :"+cadena+"   La inversa es :"+aux;
+        return "La palabra introducida es :"+cadena+"   La inversa es :"+aux; // Devolvemos la palabra y la palabra al reves
     }
 }
