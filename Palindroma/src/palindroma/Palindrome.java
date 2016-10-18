@@ -18,9 +18,8 @@ public class Palindrome {
     //Constructors
     public Palindrome() {
     }
-    public Palindrome(String cadena, String aux) {
+    public Palindrome(String cadena) {
         this.cadena = cadena;
-        this.aux = aux;
     }
 
     //Getters and Setters
