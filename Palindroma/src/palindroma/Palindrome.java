@@ -14,7 +14,7 @@ public class Palindrome {
     //Declare
     private String cadena;
     private String aux;
-   
+    
     //Constructors
     public Palindrome() {
     }
@@ -39,13 +39,18 @@ public class Palindrome {
      * Comprueba si una cadena es o palindrome
      */
     public boolean verificar() { 
-	
-        aux=""; //Le damos a aux un valor de cero.
-        for (int i=this.cadena.length()-1;i>=0;i--){ // Bucle que recorre la cadena de atrás para alante
-            aux+=cadena.charAt(i);                  //copiamos los caracteres de la cadena principal en aux segun el bucle 
-        }                                         //por lo tanto se copiará de atras para alante por lo tanto al revés
-        
-        if (aux.equals(cadena)){// comparamos las dos cadenas 
+	                                              
+         String ascii = "aaaeeeiiiooouuunAAAEEEIIIOOOUUUNcC";
+         String original = "áàäéèëíìïóòöúùuñÁÀÄÉÈËÍÌÏÓÒÖÚÙÜÑçÇ";
+         
+         for (int i=0; i<this.cadena.length(); i++) {
+                 // Reemplazamos los caracteres especiales.
+                 this.cadena = this.cadena.replace(original.charAt(i), ascii.charAt(i));
+           }
+         this.cadena = this.cadena.replace(" ","");
+          this.cadena=this.cadena.toLowerCase();
+         aux = new StringBuilder(this.cadena).reverse().toString();
+         if (aux.equals(cadena)){// comparamos las dos cadenas 
             return true;
         }
         else {
