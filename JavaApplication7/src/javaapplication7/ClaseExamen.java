@@ -21,7 +21,7 @@ public class ClaseExamen {
     boolean valid;
     int count, encerts, pos;
     char c; 
-    
+
 //VOID'S    
     public void pGeneral(){
     do{
@@ -116,7 +116,7 @@ public class ClaseExamen {
     }
     
     //Void Caracters Valids
-    private void CaractersValids (){
+    public void CaractersValids (){
         //Restringim les paraules que acceptem
         if(llegit.matches("[ABCDEFGHIJKLMNÑOPQRSTUVWXYZ ]")) valid=true;
     }
